@@ -1,2 +1,2 @@
 mkdir out
-.\packages\NuGet.CommandLine\tools\nuget pack src\PI.GCS2\2.7.1\PI.GCS2.nuspec -OutputDirectory out\
+.\packages\NuGet.CommandLine\tools\nuget pack build\PI.GCS2.Win.nuspec -OutputDirectory out\

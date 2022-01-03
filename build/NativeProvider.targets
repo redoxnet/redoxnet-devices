@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+  ******************************************************************************
+  **               Redox.Net Native Provider Interop Files                     **
+  ******************************************************************************
+  -->
+  <ItemGroup Condition="'$(MSBuildThisFileDirectory)' != '' And HasTrailingSlash('$(MSBuildThisFileDirectory)')">
+    <FieldLabInteropFiles Include="$(MSBuildThisFileDirectory)**\*.dll" />
+    <FieldLabInteropFiles Include="$(MSBuildThisFileDirectory)**\*.so" />
+    <None Include="@(RedoxNetInteropFiles)" Visible="false">
+      <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
