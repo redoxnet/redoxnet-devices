@@ -14,10 +14,10 @@
   <files>
     <file src="..\src\PI.GCS2\2.7.1\x64\libE7XXGCS2.dll" target="runtimes\win-x64\native\libE7XXGCS2.dll" />
     <file src="..\src\PI.GCS2\2.7.1\x86\libE7XXGCS2.dll" target="runtimes\win-x86\native\libE7XXGCS2.dll" />
-    <file src="..\build\NativeProvider.targets" target="build\net461\RedoxNet.Devices.Tetgen.Win.targets" />
-    <file src="..\build\NativeProvider.targets" target="build\net48\RedoxNet.Devices.Tetgen.Win.targets" />
-    <file src="..\build\NativeProvider.targets" target="buildTransitive\net461\RedoxNet.Devices.Tetgen.Win.targets" />
-    <file src="..\build\NativeProvider.targets" target="buildTransitive\net48\RedoxNet.Devices.Tetgen.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="build\net461\PI.GCS2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="build\net48\PI.GCS2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net461\PI.GCS2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net48\PI.GCS2.Win.targets" />
     <file src="..\build\_._" target="build\net5.0\_._" />
     <file src="..\build\_._" target="build\netstandard2.0\_._" />
     <file src="..\build\_._" target="buildTransitive\net5.0\_._" />
