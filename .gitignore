@@ -1,0 +1,7 @@
+# Build Directories
+bin/
+obj/
+out/
+
+#nuget packages
+*.nupkg
