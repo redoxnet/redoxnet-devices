@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>E7XX.GCS.Win</id>
+    <version>0.1.0</version>
+    <authors>Jong Hyun Kim</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://packages.redoxnet.com/</projectUrl>
+    <iconUrl>https://icon.redoxnet.com/</iconUrl>
+    <description>PI E7XX GCS Win</description>
+    <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
+  </metadata>
+  <files>
+    <file src="..\src\E7XX.GCS\4.4.1.1\x64\libE7XXGCS.dll" target="runtimes\win-x64\native\libE7XXGCS.dll" />
+    <file src="..\src\E7XX.GCS\4.4.1.1\x86\libE7XXGCS.dll" target="runtimes\win-x86\native\libE7XXGCS.dll" />
+    <file src="..\build\NativeProvider.targets" target="build\net461\E7XX.GCS.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="build\net48\E7XX.GCS.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net461\E7XX.GCS.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net48\E7XX.GCS.Win.targets" />
+    <file src="..\build\_._" target="build\net5.0\_._" />
+    <file src="..\build\_._" target="build\netstandard2.0\_._" />
+    <file src="..\build\_._" target="buildTransitive\net5.0\_._" />
+    <file src="..\build\_._" target="buildTransitive\netstandard2.0\_._" />
+  </files>
+</package>

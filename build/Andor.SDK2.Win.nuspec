@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Andor.SDK2.Win</id>
+    <version>0.1.3</version>
+    <authors>Jong Hyun Kim</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://packages.redoxnet.com/</projectUrl>
+    <iconUrl>https://icon.redoxnet.com/</iconUrl>
+    <description>Andor SDK2 Win</description>
+    <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\src\Andor.SDK2\2.101.30003\ATMCD32CS.dll" target="lib\netstandard2.0\ATMCD32CS.dll" />
+    <file src="..\src\Andor.SDK2\2.101.30003\ATMCD64CS.dll" target="lib\netstandard2.0\ATMCD64CS.dll" />
+    <file src="..\src\Andor.SDK2\2.101.30003\atmcd32d.dll" target="runtimes\win-x86\native\atmcd32d.dll" />
+    <file src="..\src\Andor.SDK2\2.101.30003\atmcd64d.dll" target="runtimes\win-x64\native\atmcd64d.dll" />
+    <file src="..\build\NativeProvider.targets" target="build\net461\Andor.SDK2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="build\net48\Andor.SDK2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net461\Andor.SDK2.Win.targets" />
+    <file src="..\build\NativeProvider.targets" target="buildTransitive\net48\Andor.SDK2.Win.targets" />
+    <file src="..\build\_._" target="build\net5.0\_._" />
+    <file src="..\build\_._" target="build\netstandard2.0\_._" />
+    <file src="..\build\_._" target="buildTransitive\net5.0\_._" />
+    <file src="..\build\_._" target="buildTransitive\netstandard2.0\_._" />
+  </files>
+</package>
