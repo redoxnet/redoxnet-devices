@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>PI.GCS2.Win</id>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <authors>Jong Hyun Kim</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://packages.redoxnet.com/</projectUrl>
-    <iconUrl>https://icon.redoxnet.com/</iconUrl>
+    <icon>icon.png</icon>
     <description>PI GCS2 Win</description>
     <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
   </metadata>
@@ -22,5 +22,6 @@
     <file src="..\build\_._" target="build\netstandard2.0\_._" />
     <file src="..\build\_._" target="buildTransitive\net5.0\_._" />
     <file src="..\build\_._" target="buildTransitive\netstandard2.0\_._" />
+    <file src="..\build\icon.png" target="icon.png" />
   </files>
 </package>

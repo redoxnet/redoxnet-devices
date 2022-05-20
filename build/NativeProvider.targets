@@ -5,8 +5,8 @@
   ******************************************************************************
   -->
   <ItemGroup Condition="'$(MSBuildThisFileDirectory)' != '' And HasTrailingSlash('$(MSBuildThisFileDirectory)')">
-    <FieldLabInteropFiles Include="$(MSBuildThisFileDirectory)**\*.dll" />
-    <FieldLabInteropFiles Include="$(MSBuildThisFileDirectory)**\*.so" />
+    <RedoxNetInteropFiles Include="$(MSBuildThisFileDirectory)**\*.dll" />
+    <RedoxNetInteropFiles Include="$(MSBuildThisFileDirectory)**\*.so" />
     <None Include="@(RedoxNetInteropFiles)" Visible="false">
       <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
