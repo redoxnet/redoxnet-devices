@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Andor.SDK2.Win</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <authors>Jong Hyun Kim</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -11,8 +11,7 @@
     <description>Andor SDK2 Win</description>
     <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
     <dependencies>
-      <group targetFramework=".NETStandard2.0">
-      </group>
+      <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
   <files>

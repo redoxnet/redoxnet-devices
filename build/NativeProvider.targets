@@ -5,10 +5,11 @@
   ******************************************************************************
   -->
   <ItemGroup Condition="'$(MSBuildThisFileDirectory)' != '' And HasTrailingSlash('$(MSBuildThisFileDirectory)')">
-    <RedoxNetInteropFiles Include="$(MSBuildThisFileDirectory)**\*.dll" />
-    <RedoxNetInteropFiles Include="$(MSBuildThisFileDirectory)**\*.so" />
-    <None Include="@(RedoxNetInteropFiles)" Visible="false">
-      <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+    <InteropFiles Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*.dll" />
+    <InteropFiles Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*.so" />
+    <InteropFiles Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*.dylib" />
+    <None Include="@(InteropFiles)" Visible="false">
+      <Link>runtimes/%(RecursiveDir)%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

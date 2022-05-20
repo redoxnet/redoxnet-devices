@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>E7XX.GCS.Win</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <authors>Jong Hyun Kim</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -10,6 +10,9 @@
     <icon>icon.png</icon>
     <description>PI E7XX GCS Win</description>
     <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>    
   </metadata>
   <files>
     <file src="..\src\E7XX.GCS\4.4.1.1\x64\libE7XXGCS.dll" target="runtimes\win-x64\native\libE7XXGCS.dll" />

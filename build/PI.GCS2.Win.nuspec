@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>PI.GCS2.Win</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <authors>Jong Hyun Kim</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -10,6 +10,9 @@
     <icon>icon.png</icon>
     <description>PI GCS2 Win</description>
     <repository type="git" url="https://github.com/redoxnet/redoxnet-devices" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\src\PI.GCS2\3.17.9\x64\libPIGCS2.dll" target="runtimes\win-x64\native\libPIGCS2.dll" />
