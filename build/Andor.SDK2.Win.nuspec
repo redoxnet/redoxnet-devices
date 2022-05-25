@@ -15,10 +15,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\src\Andor.SDK2\2.101.30003\ATMCD32CS.dll" target="lib\netstandard2.0\ATMCD32CS.dll" />
-    <file src="..\src\Andor.SDK2\2.101.30003\ATMCD64CS.dll" target="lib\netstandard2.0\ATMCD64CS.dll" />
-    <file src="..\src\Andor.SDK2\2.101.30003\atmcd32d.dll" target="runtimes\win-x86\native\atmcd32d.dll" />
-    <file src="..\src\Andor.SDK2\2.101.30003\atmcd64d.dll" target="runtimes\win-x64\native\atmcd64d.dll" />
+    <file src="..\src\Andor.SDK2\2.101.30003\atmcd64d.dll" target="runtimes\win-x64\native\libATMCD.dll" />
+    <file src="..\src\Andor.SDK2\2.101.30003\atmcd32d.dll" target="runtimes\win-x86\native\libATMCD.dll" />
     <file src="..\build\NativeProvider.targets" target="build\net461\Andor.SDK2.Win.targets" />
     <file src="..\build\NativeProvider.targets" target="build\net48\Andor.SDK2.Win.targets" />
     <file src="..\build\NativeProvider.targets" target="buildTransitive\net461\Andor.SDK2.Win.targets" />
